@@ -94,9 +94,11 @@ var holaMundo = ["Hola", "Mundo"];
 
 //  17.- Crear variable de nombre loGuardoTodo declarada con valor array con valores 'hola', 'que', 23, 42.33 y 'tal'
 
-let loGuardoTodo = ["hola", "que", 23]
+let loGuardoTodo = ["hola", "que", 23, 42.33, "tal"];
 
 //  18.- Crear variable de nombre arrayDeArrays declarada con valor array: [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']]
+
+var arrayDeArrays = [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']];
 
 // Funciones
 //  19.- Crea la función multiplicacion que acepte como argumento dos números y devuelva el resultado de su multiplicación
@@ -119,8 +121,6 @@ function esPar(a) {
 
 //  22.- Crea el array arrayFunciones que tenga como valor las funciones: suma, resta y multiplicación (todas aceptan 2 números como argumento y devuelve el resultado de su operación)
 
-
-// const arrayFunciones = [suma(a,b), resta(a,b), multiplicacion(a,b)]
 
 // Mezclando arrays y funciones
 
