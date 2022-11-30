@@ -70,12 +70,6 @@ function obtenerPares(arr){
 
 //  12.- Crear la función pintarArray que acepte como argumento un array y devuelva una cadena de texto Array entrada: [0, 1, 2] String salida: '[0, 1, 2]'
 
-// function pintarArray(arr) {
-//     let solution = arr.toString()
-//     .split(",")
-//     .join(",")
-//     return "[+solution+]";
-// }
 
 //  13.- Crear la función arrayMapi que acepte como argumento un Array y una función y devuelva un array en el que se haya aplicado la función a cada elemento del array
 
@@ -91,9 +85,16 @@ function arrayMapi (array,func) {
 // Arrays
 //  15.- Crear variable de nombre arrayNumerosNeg declarada con un array de números del 0 al -9 (0, -1, -2...)
 
+var arrayNumerosNeg = [0,-1,-2,-3,-4,-5,-6,-7,-8,-9];
+
+
 //  16.- Crear variable de nombre holaMundo declarada con valor array con las palabras 'Hola' y 'Mundo'
 
+var holaMundo = ["Hola", "Mundo"];
+
 //  17.- Crear variable de nombre loGuardoTodo declarada con valor array con valores 'hola', 'que', 23, 42.33 y 'tal'
+
+let loGuardoTodo = ["hola", "que", 23]
 
 //  18.- Crear variable de nombre arrayDeArrays declarada con valor array: [[756, 'nombre'], [225, 'apellido'], [298, 'direccion']]
 
@@ -122,10 +123,13 @@ function esPar(a) {
 // const arrayFunciones = [suma(a,b), resta(a,b), multiplicacion(a,b)]
 
 // Mezclando arrays y funciones
+
 //  23.- Crear la función ordenarArray2 que acepta como argumento un array de números y devuelva un array ordenado de mayor a menor
+
 
 //  24.- Crear la función obtenerImpares que acepta como argumento un array de números y devuelva un array con los elementos impares
 
 //  25.- Crear la función sumarArray que acepte como argumento un array numérico y devuelva la suma de los números en el array Array: [1, 2, 3] resultado: 6
+
 
 //  26.- Crear la función multiplicarArray que acepte como argumento un array numérico y devuelva la multiplicación de los números en el array Array: [2, 3, 4] resultado: 24
