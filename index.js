@@ -1,13 +1,16 @@
 // Arrays
 //  1.- Crear variable de nombre arrayVacio cuyo valor sea un array vacío
+
 const arrayVacio = [];
+
 //  2.- Crear variable de nombre arrayNumeros declarada con un array de números del 0 al 9 (0, 1, 2...)
 
 const arrayNumeros = [0,1,2,3,4,5,6,7,8,9];
 
 //  3.- Crear variable de nombre arrayNumerosPares declarada con un array con los números pares del 0 al 9 (considerando al 0 par)
 
-const arrayNumerosPares = [0, 2, 4, 6, 8]
+const arrayNumerosPares = [0, 2, 4, 6, 8];
+
 //  4.- Crear variable de nombre arrayBidimensional declarada con valor array [[0, 1, 2], ['a', 'b', 'c']]
 
 const arrayBidimensional = [[0, 1, 2], ['a', 'b', 'c']];
@@ -26,27 +29,63 @@ function potenciacion (a,b) {
 
 //  7.- Crea la función separarPalabras que acepte como argumento un string y devuelva un array de palabras 'hola mundo' => [hola, mundo]
 
+function separarPalabras(string){
+    return string.split(" ");
+}
 
 //  8.- Crea la función repetirString que acepte como argumento un string y un número y devuelva un string que sea el resultado de concatenar el primer string el número dado de veces
 
-
+function repetirString (str,x) {
+    return str.repeat(x)
+}
 
 //  9.- Crea la función esPrimo que acepte como argumento un número y devuelva true si es primo y false si no lo es
 
-
+function esPrimo (x) {
+    for (let i =2; i < x; i++) {
+        if (x %i == 0) {
+            return false
+        }
+    }
+    return true;
+}
 
 
 // Mezclando arrays y funciones
 //  10.- Crear la función ordenarArray que acepta como argumento un array de números y devuelva un array ordenado de menor a mayor
 
+function ordenarArray (arr) {
+    arr.sort(function(a,b) {
+        return a - b;
+    })
+    return arr
+}
 
 //  11.- Crear la función obtenerPares que acepta como argumento un array de números y devuelva un array con los elementos pares
 
+function obtenerPares(arr){
+    return arr.filter(number => number %2 === 0);
+}
+
+
 //  12.- Crear la función pintarArray que acepte como argumento un array y devuelva una cadena de texto Array entrada: [0, 1, 2] String salida: '[0, 1, 2]'
+
+// function pintarArray(arr) {
+//     let solution = arr.toString()
+//     .split(",")
+//     .join(",")
+//     return "[+solution+]";
+// }
 
 //  13.- Crear la función arrayMapi que acepte como argumento un Array y una función y devuelva un array en el que se haya aplicado la función a cada elemento del array
 
+function arrayMapi (array,func) {
+    return array.map(func);
+}
+
 //  14.- Crear la función eliminarDuplicados que acepte como argumento un array y devuelva un array en el que se hayan eliminado los duplicados
+
+
 
 // Iteraciones 🏰 proyecto 🏰
 // Arrays
